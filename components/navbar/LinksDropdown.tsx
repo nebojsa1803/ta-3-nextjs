@@ -24,7 +24,11 @@ function LinksDropdown() {
       <DropdownMenuContent className='w-40' align='start' sideOffset={10}>
         <SignedOut>
           <DropdownMenuItem>
-            <SignInButton mode='modal'>
+            {/* forceRedirectedUrl added - after loggig go to dashboard */}
+            <SignInButton
+              mode='modal'
+              forceRedirectUrl='/new-analysis/general-data-form'
+            >
               <button className='w-full text-left'>Улогуј се</button>
             </SignInButton>
           </DropdownMenuItem>
